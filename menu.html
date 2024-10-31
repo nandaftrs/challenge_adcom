@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Sushi</title>
+    <!-- tailwind.css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar -->
+    <header class="bg-grey-400 shadow p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-yellow-900 italic">
+          Waraku.<span class="text-yellow-500 italic">Sei</span>
+        </h1>
+
+        <nav>
+          <div class="flex space-x-4">
+            <a href="index.html" class="text-gray-700 hover:text-yellow-500"
+              >Home</a
+            >
+            <a href="about.html" class="text-gray-700 hover:text-yellow-500"
+              >About Us</a
+            >
+            <a href="menu.html" class="text-gray-700 hover:text-yellow-500"
+              >Menu</a
+            >
+            <a href="review.html" class="text-gray-700 hover:text-yellow-500"
+              >Review</a
+            >
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="container mx-auto mt-4 flex justify-center">
+        <input
+          type="search"
+          placeholder="Cari Menu, Ramen, atau Sushi"
+          class="border border-gray-300 rounded-full px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        />
+        <button
+          class="border border-yellow-700 text-yellow-700 px-4 py-2 rounded-full ml-2 hover:bg-yellow-700 hover:text-white transition duration-300"
+          onclick="window.location.href='order-form.html'"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+    </header>
+
+    <h2
+      class="mx-auto text-center text-3xl font-semibold italic text-yellow-900 mt-10 mb-8"
+    >
+      Waraku.Sei <span class="text-yellow-500 italic">Menu</span>
+    </h2>
+    <!-- Menu Restoran -->
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg mt-6 p-6">
+      <h1 class="text-2xl font-bold text-center mb-6">Menu Sushi</h1>
+      <!-- Menu 1 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/makizushi.jpg"
+            alt="makizushi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Makizushi</h2>
+            <p class="text-gray-700">Rp50.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Nasi sushi lembut yang digulung dengan nori renyah, berisi ikan
+              segar dan sayuran segar pilihan. Disajikan dalam potongan rapi
+              dengan tambahan kecap asin, wasabi, dan acar jahe untuk cita rasa
+              yang lebih lengkap.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 2 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/salmon-nigiri.jpg"
+            alt="nigiri"
+            class="w-40 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Salmon Nigiri</h2>
+            <p class="text-gray-700">Rp60.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Irisan salmon segar yang lembut diletakkan di atas nasi sushi
+              hangat, disajikan dengan sedikit wasabi di antaranya. Rasa manis
+              alami salmon berpadu sempurna dengan nasi yang lembut,
+              menghadirkan kesegaran dalam setiap gigitan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 3 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/gunkan.jpg"
+            alt="gunkan"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Gunkan</h2>
+            <p class="text-gray-700">Rp50.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Nasi sushi dibalut nori yang dibentuk seperti perahu kecil, diisi
+              dengan topping segar seperti telur ikan, salad seafood, atau
+              potongan gurita.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 4 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/temaki.jpg"
+            alt="temaki"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Temaki</h2>
+            <p class="text-gray-700">Rp45.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Sushi gulung berbentuk kerucut dengan nori renyah sebagai
+              pembungkus, diisi nasi sushi, ikan segar, sayuran, dan tambahan
+              lainnya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 5 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/chirashizushi.jpg"
+            alt="makizushi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Chirashizushi</h2>
+            <p class="text-gray-700">Rp40.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Semangkuk nasi sushi yang disajikan dengan aneka topping seperti
+              irisan ikan segar, telur, dan sayuran warna-warni yang tersebar di
+              atasnya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 6 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/inarizushi.jpg"
+            alt="makizushi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Inarizushi</h2>
+            <p class="text-gray-700">Rp50.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Nasi sushi yang lembut dimasukkan ke dalam kantung tahu goreng
+              manis (aburaage).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Ramen -->
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg mt-6 p-6">
+      <h1 class="text-2xl font-bold text-center mb-6">Menu Ramen</h1>
+      <!-- Menu 1 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/ramen-miso.jpg"
+            alt="makizushi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Miso Ramen</h2>
+            <p class="text-gray-700">Rp35.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Mi kenyal yang disajikan dalam kuah kaldu miso kaya rasa,
+              dilengkapi dengan topping seperti irisan daging, telur rebus,
+              jagung, rumput laut, dan daun bawang.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 2 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/tonkotsu.jpg"
+            alt="makizushi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Tonkotsu Ramen</h2>
+            <p class="text-gray-700">Rp40.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Mi ramen kenyal yang disajikan dalam kuah kaldu pork bone yang
+              kaya dan kental, memberikan rasa umami yang mendalam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 3 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/shoyu.jpg"
+            alt="shouyu"
+            class="w-40 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Shouyu Ramen</h2>
+            <p class="text-gray-700">Rp35.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Mi ramen yang disajikan dalam kuah kaldu berbasis kecap (shouyu)
+              yang gurih dan aromatic. Topping termasuk irisan daging babi,
+              telur rebus, nori, dan daun bawang.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 4 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="../assets/images/shio.jpg"
+            alt="shio"
+            class="w-40 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Shio Ramen</h2>
+            <p class="text-gray-700">Rp35.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Mi ramen yang disajikan dalam kuah kaldu ringan berbasis garam
+              (shio), memberikan rasa yang segar dan bersih. Dihiasi dengan
+              topping seperti irisan daging, telur rebus, sayuran, dan rumput
+              laut.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- topping -->
+      <h1 class="text-2xl font-bold text-center mt-10 mb-6">Topping</h1>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      >
+        <!-- Kolom 1 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://i.pinimg.com/564x/58/4f/02/584f02755aea3bc6d87017f0667ef984.jpg"
+            alt="Topping 1"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Narutomaki</h3>
+          <p class="text-grey-700 text-center text-sm">Rp5.000</p>
+        </div>
+        <!-- Kolom 2 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://images.tokopedia.net/img/cache/500-square/attachment/2020/4/27/158797101286672/158797101286672_c30906dc-b30d-44ac-a270-309ad0d18c69.png"
+            alt="Topping 2"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm font-semibold">Bawang Bombay</h3>
+          <p class="text-grey-700 text-center text-sm">Rp2.000</p>
+        </div>
+        <!-- Kolom 3 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://www.marionskitchen.com/wp-content/uploads/2019/05/How-To-Chashu-Pork-for-Ramen1.jpg"
+            alt="Topping 3"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Chashu</h3>
+          <p class="text-grey-700 text-center text-sm">Rp10.000</p>
+        </div>
+        <!-- Kolom 4 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://png.pngtree.com/thumb_back/fw800/background/20240428/pngtree-a-bunch-of-green-onions-and-fresh-chopped-green-onions-in-image_15670379.jpg"
+            alt="Topping 4"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Daun Bawang</h3>
+          <p class="text-grey-700 text-center text-sm">Rp2.000</p>
+        </div>
+        <!-- Kolom 5 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://japacle.com/cdn/shop/products/ay6fjnjpdz_0.jpg?v=1687344171"
+            alt="Topping 5"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Menma</h3>
+          <p class="text-grey-700 text-center text-sm">Rp5.000</p>
+        </div>
+        <!-- Kolom 6 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://assets-a1.kompasiana.com/items/album/2020/12/16/89c434b3-b225-4a5d-917c-14cd9212a62f-5fd9c047d541df17992a56c2.jpg"
+            alt="Topping 6"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Nori</h3>
+          <p class="text-grey-700 text-center text-sm">Rp3.000</p>
+        </div>
+        <!-- Kolom 7 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://mysiloam-api.siloamhospitals.com/public-asset/website-cms/website-cms-16933792182032570.webp"
+            alt="Topping 7"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Telur Rebus</h3>
+          <p class="text-grey-700 text-center text-sm">Rp5.000</p>
+        </div>
+        <!-- Kolom 8 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://cdn1.katadata.co.id/media/images/thumb/2023/04/11/Ilustrasi_Bubur_Jagung_Manis-2023_04_11-13_53_22_2fa6bd1624943e873674eb12ac912542_960x640_thumb.jpg"
+            alt="Topping 8"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Jagung Manis</h3>
+          <p class="text-grey-700 text-center text-sm">Rp3.000</p>
+        </div>
+        <!-- Kolom 9 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://i.pinimg.com/236x/91/ad/2a/91ad2a726c51fc2757aabc2faae79622.jpg"
+            alt="Topping 9"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Jamur Shiitake</h3>
+          <p class="text-grey-700 text-center text-sm">Rp5.000</p>
+        </div>
+        <!-- Kolom 10 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://healthybelly.s3.amazonaws.com/gambar_sampul/gambar_sampul_1725272474.webp"
+            alt="Topping 10"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Selada Romaine</h3>
+          <p class="text-grey-700 text-center text-sm">Rp4.000</p>
+        </div>
+        <!-- Kolom 11 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://awsimages.detik.net.id/community/media/visual/2023/03/06/resep-chicken-katsu.jpeg?w=600&q=90"
+            alt="Topping 11"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Chicken Katsu</h3>
+          <p class="text-grey-700 text-center text-sm">Rp10.000</p>
+        </div>
+        <!-- Kolom 12 -->
+        <div class="bg-white p-2 rounded shadow">
+          <img
+            src="https://i.pinimg.com/236x/88/fc/22/88fc22d5ba68fda79f453dbce8057a48.jpg"
+            alt="Topping 12"
+            class="w-full h-20 object-cover rounded mb-1"
+          />
+          <h3 class="text-center text-sm mt-2 font-semibold">Tempura</h3>
+          <p class="text-grey-700 text-center text-sm">Rp10.000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Lain -->
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg mt-6 p-6">
+      <h1 class="text-2xl font-bold text-center mb-6">Menu Lainnya</h1>
+      <!-- Menu 1 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="assets/images/tempura.jpeg"
+            alt="Tempura"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Tempura</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Sayuran dan ikan yang dilapisi adonan ringan, digoreng hingga
+              renyah dan disajikan dengan saus celup khas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 2 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/3e/6f/6f/3e6f6f6a9928bb1e567f5ddcf04af4af.jpg"
+            alt="karaage"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Karaage</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Potongan ayam yang marinasi dalam bumbu khas, dilapisi tepung, dan
+              digoreng hingga keemasan dan renyah.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 3 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/a9/49/0d/a9490dc3cebbb65a56ef45c63e7515d2.jpg"
+            alt="takoyaki"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Takoyaki</h2>
+            <p class="text-gray-700">Rp20.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Bola-bola kecil yang terbuat dari adonan tepung terigu yang diisi
+              dengan potongan gurita, hijau bawang, dan tempura, dimasak dalam
+              cetakan bulat. Disajikan dengan saus takoyaki, mayonnaise, dan
+              taburan bonito flakes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 4 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/67/e8/a1/67e8a1eed5931a462733759d6acc883e.jpg"
+            alt="donburi"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Donburi</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Nasi hangat yang disajikan dalam mangkuk, di atasnya dilapisi
+              dengan berbagai bahan seperti daging, sayuran, atau telur, dengan
+              saus yang kaya rasa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 5 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/e3/ae/c5/e3aec53ed0cca06a136dee9e3d1c25fb.jpg"
+            alt="kare-udon"
+            class="w-32 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Kare Udon</h2>
+            <p class="text-gray-700">Rp30.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Mi udon tebal yang lembut disajikan dalam kuah kari Jepang yang
+              kental dan penuh rasa. Dilengkapi dengan sayuran segar dan irisan
+              daging.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 6 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/ad/cc/31/adcc31fcd9db286e4ec22fbc7fa4b5a7.jpg"
+            alt="Okonomiyaki"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Okonomiyaki</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Pancake Jepang yang terbuat dari adonan tepung, telur, dan
+              berbagai bahan seperti kol, daging, dan seafood, dimasak di atas
+              panggangan. Disajikan dengan saus okonomiyaki, mayonnaise, dan
+              taburan bonito flakes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Minuman -->
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg mt-6 p-6">
+      <h1 class="text-2xl font-bold text-center mb-6">Minuman</h1>
+      <!-- Menu 1 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/236x/e0/79/f1/e079f19e946b915975275fa37dc992bf.jpg"
+            alt="orange-juice"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Jus Jeruk</h2>
+            <p class="text-gray-700">Rp20.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Minuman segar yang terbuat dari jeruk segar, memberikan rasa manis
+              dan asam yang menyegarkan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 2 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1606107076/attached_image/teh-hijau-vs-teh-oolong-lebih-sehat-mana.jpg"
+            alt="oolong"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Teh Oolong</h2>
+            <p class="text-gray-700">Rp15.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Teh semi-fermentasi dengan aroma floral yang khas dan rasa yang
+              lembut, menciptakan pengalaman menyegarkan di setiap tegukan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 3 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0381/5325/7093/files/59421702_121590219030530_255326832569671565_n_large.jpg?v=1589642642"
+            alt="sakura-tea"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Teh Sakura</h2>
+            <p class="text-gray-700">Rp20.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Teh herbal yang terbuat dari bunga sakura yang cantik, menawarkan
+              aroma manis dan rasa yang lembut
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 4 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/564x/ca/50/46/ca5046e1268edbec98b9adbbec80c730.jpg"
+            alt="ginger-ale"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Ginger Ale</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Minuman berkarbonasi yang menyegarkan dengan rasa pedas dari jahe
+              dan sedikit manis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 5 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/564x/04/a3/48/04a34851396d661f0f02e63397a00fac.jpg"
+            alt="cola"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Cola</h2>
+            <p class="text-gray-700">Rp15.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Minuman berkarbonasi yang manis dengan rasa khas cola yang kuat
+              dan sedikit asam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu 6 -->
+      <div class="mb-6">
+        <div class="flex items-start">
+          <img
+            src="https://i.pinimg.com/564x/63/85/5f/63855f1c6de9cd3e997926f88fb5f76e.jpg"
+            alt="green-tea"
+            class="w-24 h-24 mr-4 rounded-lg shadow-lg"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Green Tea (Hot/Ice)</h2>
+            <p class="text-gray-700">Rp25.000</p>
+            <p class="text-gray-600 text-sm mt-2">
+              Teh hijau yang segar dan kaya akan antioksidan, memberikan rasa
+              alami yang ringan dan menyegarkan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-4 mt-6">
+      <div class="flex justify-center space-x-4">
+        <button
+          class="border border-yellow-800 text-yellow-700 px-4 py-2 rounded-full hover:bg-yellow-700 hover:text-white transition duration-300"
+          onclick="window.location.href='index.html'"
+        >
+          Kembali
+        </button>
+
+        <button
+          class="border border-yellow-800 text-yellow-700 px-4 py-2 rounded-full hover:bg-yellow-700 hover:text-white transition duration-300"
+          onclick="window.location.href='order-form.html'"
+        >
+          Pesan
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-yellow-900 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold">
+          Waraku.Sei &copy; 2024. All Rights Reserved.
+        </p>
+        <p class="mt-2">Temukan kami di media sosial:</p>
+        <div class="flex justify-center mt-4 space-x-6">
+          <a
+            href="https://www.instagram.com/wxlliamj.mnf"
+            target="_blank"
+            class="text-pink-400 hover:text-pink-600"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://wa.me/6289675827491"
+            target="_blank"
+            class="text-green-500 hover:text-green-700"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/eajeanlv"
+            target="_blank"
+            class="text-blue-400 hover:text-blue-600"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

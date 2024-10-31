@@ -1,0 +1,423 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Order Makanan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- header -->
+    <header class="bg-grey-500 shadow p-4 mb-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-yellow-900 italic">
+          Waraku.<span class="text-yellow-500 italic">Sei</span>
+        </h1>
+
+        <nav>
+          <div class="flex space-x-4">
+            <a href="index.html" class="text-gray-700 hover:text-yellow-500"
+              >Home</a
+            >
+            <a href="about.html" class="text-gray-700 hover:text-yellow-500"
+              >About Us</a
+            >
+            <a href="menu.html" class="text-gray-700 hover:text-yellow-500"
+              >Menu</a
+            >
+            <a href="review.html" class="text-gray-700 hover:text-yellow-500"
+              >Review</a
+            >
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container mx-auto mt-10">
+      <h1 class="text-2xl font-bold text-center mb-6">
+        Form Pemesanan Makanan
+      </h1>
+      <form
+        action="proses-order.php"
+        method="POST"
+        class="bg-white p-6 rounded-lg shadow-md"
+      >
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan nama Anda"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan email Anda"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="food" class="block text-gray-700">Pilih Makanan:</label>
+          <select
+            id="food"
+            name="food"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2 appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300"
+          >
+            <option value="">-- Pilih Makanan --</option>
+            <option value="sushi">Menu Sushi</option>
+            <option value="ramen">Menu Ramen</option>
+            <option value="minuman">Minuman</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="quantity" class="block text-gray-700">Jumlah:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan jumlah pesanan"
+            min="1"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full transition ease-in-out delay-150 bg-yellow-600 hover:-translate-y-1 hover:scale-110 text-white font-bold py-2 rounded hover:bg-yellow-700"
+        >
+          Pesan
+        </button>
+      </form>
+    </div>
+
+    <div class="place-items-center">
+      <button
+        class="flex border border-yellow-800 text-yellow-700 px-4 py-2 rounded-full ml-2 mt-10 mb-6 hover:bg-yellow-700 hover:text-white transition duration-300"
+        onclick="window.location.href='menu.html'"
+      >
+        Kembali
+      </button>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-yellow-900 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold">
+          Waraku.Sei &copy; 2024. All Rights Reserved.
+        </p>
+        <p class="mt-2">Temukan kami di media sosial:</p>
+        <div class="flex justify-center mt-4 space-x-6">
+          <a
+            href="https://www.instagram.com/wxlliamj.mnf"
+            target="_blank"
+            class="text-pink-400 hover:text-pink-600"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://wa.me/6289675827491"
+            target="_blank"
+            class="text-green-500 hover:text-green-700"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/eajeanlv"
+            target="_blank"
+            class="text-blue-400 hover:text-blue-600"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Order Makanan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- header -->
+    <header class="bg-grey-500 shadow p-4 mb-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-yellow-900 italic">
+          Waraku.<span class="text-yellow-500 italic">Sei</span>
+        </h1>
+
+        <nav>
+          <div class="flex space-x-4">
+            <a href="index.html" class="text-gray-700 hover:text-yellow-500"
+              >Home</a
+            >
+            <a href="about.html" class="text-gray-700 hover:text-yellow-500"
+              >About Us</a
+            >
+            <a href="menu.html" class="text-gray-700 hover:text-yellow-500"
+              >Menu</a
+            >
+            <a href="review.html" class="text-gray-700 hover:text-yellow-500"
+              >Review</a
+            >
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container mx-auto mt-10">
+      <h1 class="text-2xl font-bold text-center mb-6">
+        Form Pemesanan Makanan
+      </h1>
+      <form
+        action="proses-order.php"
+        method="POST"
+        class="bg-white p-6 rounded-lg shadow-md"
+      >
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan nama Anda"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan email Anda"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="foodType" class="block text-gray-700"
+            >Pilih Jenis Makanan:</label
+          >
+          <select
+            id="foodType"
+            name="foodType"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2 appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300"
+            onchange="updateMenuOptions()"
+          >
+            <option value="">-- Pilih Jenis Makanan --</option>
+            <option value="sushi">Menu Sushi</option>
+            <option value="ramen">Menu Ramen</option>
+            <option value="lainnya">Menu Lainnya</option>
+            <option value="minuman">Minuman</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="foodItem" class="block text-gray-700">Pilih Menu:</label>
+          <select
+            id="foodItem"
+            name="foodItem"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2 appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300"
+          >
+            <option value="">-- Pilih Menu --</option>
+          </select>
+        </div>
+
+        <script>
+          // Data for each menu type
+          const menuData = {
+            sushi: [
+              "Makizushi",
+              "Salmon Nigiri",
+              "Gunkan",
+              "Temaki",
+              "Chirazushi",
+              "Inarizushi",
+            ],
+            ramen: [
+              "Miso Ramen",
+              "Tonkatsu Ramen",
+              "Shouyu Ramen",
+              "Shio Ramen",
+            ],
+            lainnya: [
+              "Tempura",
+              "Karaage",
+              "Takoyaki",
+              "Donburi",
+              "Kare Udon",
+              "Okonomiyaki",
+            ],
+            minuman: [
+              "Jus Jeruk",
+              "Teh Oolong",
+              "Teh Sakura",
+              "Ginger Ale",
+              "Cola",
+              "Green Tea",
+            ],
+          };
+
+          // Function to update menu options based on selected food type
+          function updateMenuOptions() {
+            const foodType = document.getElementById("foodType").value;
+            const foodItem = document.getElementById("foodItem");
+
+            // Clear previous menu options
+            foodItem.innerHTML = '<option value="">-- Pilih Menu --</option>';
+
+            // Populate new menu options if a valid food type is selected
+            if (foodType && menuData[foodType]) {
+              menuData[foodType].forEach((item) => {
+                const option = document.createElement("option");
+                option.value = item;
+                option.textContent = item;
+                foodItem.appendChild(option);
+              });
+            }
+          }
+        </script>
+
+        <div class="mb-4">
+          <label for="quantity" class="block text-gray-700">Jumlah:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            placeholder="Masukkan jumlah pesanan"
+            min="1"
+          />
+        </div>
+        
+        <!-- Tombol Pesan -->
+        <button
+          type="button"
+          onclick="showSuccessMessage()"
+          class="w-full transition ease-in-out delay-150 bg-yellow-600 hover:-translate-y-1 hover:scale-110 text-white font-bold py-2 rounded hover:bg-yellow-700"
+        >
+          Pesan
+        </button>
+
+        <!-- Pesan Sukses -->
+        <div
+          id="successMessage"
+          class="mt-4 text-center text-yellow-600 font-semibold hidden"
+        >
+          Pemesanan berhasil! Pesanan sedang diproses.
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+          function showSuccessMessage() {
+            // Menampilkan pesan sukses
+            document
+              .getElementById("successMessage")
+              .classList.remove("hidden");
+
+            // Menghilangkan pesan setelah beberapa detik, jika diinginkan
+            setTimeout(function () {
+              document.getElementById("successMessage").classList.add("hidden");
+            }, 3000); // 3000ms = 3 detik
+          }
+        </script>
+      </form>
+    </div>
+
+    <div class="place-items-center">
+      <button
+        class="flex border border-yellow-800 text-yellow-700 px-4 py-2 rounded-full ml-2 mt-10 mb-6 hover:bg-yellow-700 hover:text-white transition duration-300"
+        onclick="window.location.href='menu.html'"
+      >
+        Kembali
+      </button>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-yellow-900 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold">
+          Waraku.Sei &copy; 2024. All Rights Reserved.
+        </p>
+        <p class="mt-2">Temukan kami di media sosial:</p>
+        <div class="flex justify-center mt-4 space-x-6">
+          <a
+            href="https://www.instagram.com/wxlliamj.mnf"
+            target="_blank"
+            class="text-pink-400 hover:text-pink-600"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://wa.me/6289675827491"
+            target="_blank"
+            class="text-green-500 hover:text-green-700"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/eajeanlv"
+            target="_blank"
+            class="text-blue-400 hover:text-blue-600"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+>>>>>>> ad6b2a6 (commit)
